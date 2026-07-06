@@ -41,3 +41,6 @@ function App() {
 }
 
 export default App
+
+
+git commit -m "Added React components"
