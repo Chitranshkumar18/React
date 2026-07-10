@@ -10,11 +10,11 @@ function App() {
     if (count < 200) {
 
       //++++++ ye ek batch ban kr execute hota kuki ye similar work kr raha hai or hr bar only +1 hoga. =====>>>>> (imp for interview)
-      setCount(count + 1);
-      setCount(count + 1);
-      setCount(count + 1);
-      setCount(count + 1);
-      setCount(count + 1);
+      // setCount(count + 1);
+      // setCount(count + 1);
+      // setCount(count + 1);
+      // setCount(count + 1);
+      // setCount(count + 1);
 
       ///++++++++++ yha call back ko concept hai isliye yha pr batch bn kr execute nhi hoga   (0 ====>>>> 5 hoga )
       setCount(count => count +1);
