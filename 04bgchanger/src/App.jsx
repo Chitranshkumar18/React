@@ -13,65 +13,65 @@ function App() {
 
       <div className = "flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
 
-        <botton
+        <button
         onClick={() => setcolor("red")}
-        className = "outline-none px-4 py-1 rounded-full text-white shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-white shadow-lg"
         style ={{backgroundColor : "red"}}
-        >Red</botton>
+        >Red</button>
 
-        <botton
+        <button
         onClick={() => setcolor("green")}
-        className = "outline-none px-4 py-1 rounded-full text-white shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-white shadow-lg"
         style ={{backgroundColor : "green"}}
-        >Green</botton>
+        >Green</button>
 
-        <botton
+        <button
         onClick={() => setcolor("yellow")}
-        className = "outline-none px-4 py-1 rounded-full text-orange shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-orange shadow-lg"
         style ={{backgroundColor : "yellow"}}
-        >Yellow</botton>
+        >Yellow</button>
 
-        <botton
+        <button
         onClick={() => setcolor("black")}
-        className = "outline-none px-4 py-1 rounded-full text-white shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-white shadow-lg"
         style ={{backgroundColor : "black"}}
-        >Black</botton>
+        >Black</button>
 
-          <botton
+          <button
         onClick={() => setcolor("pink")}
-        className = "outline-none px-4 py-1 rounded-full text-white shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-white shadow-lg"
         style ={{backgroundColor : "pink"}}
-        >Pink</botton>
+        >Pink</button>
 
-          <botton
+          <button
         onClick={() => setcolor("white")}
-        className = "outline-none px-4 py-1 rounded-full text-silver shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-silver shadow-lg"
         style ={{backgroundColor : "white"}}
-        >White</botton>
+        >White</button>
 
-          <botton
+          <button
         onClick={() => setcolor("lavender")}
-        className = "outline-none px-4 py-1 rounded-full text-silver shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-silver shadow-lg"
         style ={{backgroundColor : "lavender"}}
-        >Lavender</botton>
+        >Lavender</button>
 
-          <botton
+          <button
         onClick={() => setcolor("gray")}
-        className = "outline-none px-4 py-1 rounded-full text-white shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-white shadow-lg"
         style ={{backgroundColor : "gray"}}
-        >Gray</botton>
+        >Gray</button>
 
-          <botton
+          <button
         onClick={() => setcolor("blue")}
-        className = "outline-none px-4 py-1 rounded-full text-white shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-white shadow-lg"
         style ={{backgroundColor : "blue"}}
-        >Blue</botton>
+        >Blue</button>
 
-          <botton
+          <button
         onClick={() => setcolor("silver")}
-        className = "outline-none px-4 py-1 rounded-full text-white shadow=lg"
+        className = "outline-none px-4 py-1 rounded-full text-white shadow-lg"
         style ={{backgroundColor : "silver"}}
-        >Silver</botton>
+        >Silver</button>
 
         </div> 
     </div>
