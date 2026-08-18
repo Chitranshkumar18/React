@@ -98,17 +98,28 @@ export class Service{
 
     // file upload service
 
-    async uploadFile(file){
-        try {
-            return await this.bucket.createFile(
-                conf.appwriteBucketId,
-                ID.unique(),
-                file
-            )
-        } catch (error) {
-            console.log("Appwrite serive :: uploadFile :: error", error);
-            return false
-        }
+    async uploadFile(file) {
+      try {
+        console.log("UPLOAD FILE:", file);
+        console.log("BUCKET ID:", conf.appwriteBucketId);
+
+        const response = await this.bucket.createFile(
+            conf.appwriteBucketId,
+            ID.unique(),
+            file
+        );
+
+        console.log("APPWRITE UPLOAD RESPONSE:", response);
+
+        return response;
+      } catch (error) {
+        console.error("APPWRITE UPLOAD ERROR:", error);
+        console.error("ERROR MESSAGE:", error.message);
+        console.error("ERROR CODE:", error.code);
+        console.error("ERROR TYPE:", error.type);
+
+        throw error;
+         }
     }
 
     async deleteFile(fileId){
