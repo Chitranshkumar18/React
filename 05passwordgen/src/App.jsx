@@ -97,3 +97,5 @@ function App() {
 }
 
 export default App
+
+//UseCallback ek React hook hai jo function ko memoize karta hai — matlab jab tak dependencies change nahi hoti, wahi purana function reuse hota hai, naya function har render pe banta nahi.
