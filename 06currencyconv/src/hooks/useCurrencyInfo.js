@@ -6,8 +6,8 @@ function useCurrencyInfo(currency){
     useEffect(() => {
         fetch(`https://open.er-api.com/v6/latest/${currency.toUpperCase()}`)
         .then((res) => res.json())
-        .then((res) => setData(res.rates))
-        console.log(data);
+        .then((res) => setData(res.rates || {}))
+        .catch((err) => console.error("Error fetching currency rates:", err))
     }, [currency]) //. without dependency -->> infinite loop
                          //. Old = USD // with dependency no infinite
                          //. New = EUR

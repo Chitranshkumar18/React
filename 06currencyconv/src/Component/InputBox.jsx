@@ -1,4 +1,4 @@
-import React, {useId} from 'react'
+import { useId } from 'react'
 
 function InputBox({
     label,
@@ -26,7 +26,7 @@ function InputBox({
                     type="number"
                     placeholder="Amount"
                     disabled={amountDisable}
-                    value={amount}
+                    value={amount ?? ''}
                     onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
                 />
             </div>
