@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react"
 
 
-function Usecurrencyinfo(currency){
+function useCurrencyInfo(currency){
     const [data, setData] = useState({})
     useEffect(() => {
         fetch(`https://open.er-api.com/v6/latest/${currency.toUpperCase()}`)
@@ -19,7 +19,7 @@ function Usecurrencyinfo(currency){
     console.log(data);
     return data
 }
-export default Usecurrencyinfo;
+export default useCurrencyInfo;
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
